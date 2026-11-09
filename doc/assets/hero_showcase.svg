@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad2" cx="50%" cy="20%" r="85%">
+      <stop offset="0%" stop-color="#1A1833" />
+      <stop offset="50%" stop-color="#0E0C22" />
+      <stop offset="100%" stop-color="#05040E" />
+    </radialGradient>
+
+    <!-- Deep 3D Lift Shadow -->
+    <filter id="popShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.8" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#6366F1" flood-opacity="0.25" />
+    </filter>
+
+    <!-- Frosted Glass Menu Filter -->
+    <filter id="glassFilter" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <!-- Cupertino Frosted Gradient -->
+    <linearGradient id="cupertinoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E334D" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1E2238" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Material 3 Surface Gradient -->
+    <linearGradient id="materialGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#282A3A" />
+      <stop offset="100%" stop-color="#1E202E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Stage Background -->
+  <rect width="1200" height="640" fill="url(#bgGrad2)" rx="24" />
+  <rect width="1196" height="636" x="2" y="2" fill="none" stroke="#2D304E" stroke-width="1.5" rx="23" stroke-dasharray="6,4" />
+
+  <!-- Header Section -->
+  <g transform="translate(600, 52)" text-anchor="middle">
+    <text y="0" fill="#818CF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="2">ADAPTIVE CONTEXT MENU &amp; 3D POP OVERLAY</text>
+    <text y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="800" letter-spacing="-0.5">adaptive_context_menu</text>
+    <text y="56" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400">
+      iOS 18 Frosted Glass &amp; Material 3 Tonal • Edge-Collision Detection • Web &amp; Desktop Right-Click
+    </text>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- COLUMN 1 (LEFT): iOS / TELEGRAM STYLE 3D POP CHAT BUBBLE                  -->
+  <!-- ========================================================================= -->
+  <g transform="translate(80, 140)">
+    <rect width="480" height="370" rx="20" fill="#131424" stroke="#2E3048" stroke-width="1.5" />
+    <text x="24" y="36" fill="#818CF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1">IOS / MACOS: CUPERTINO FROSTED GLASS</text>
+
+    <!-- Popped Elevated Chat Bubble with Glow -->
+    <g transform="translate(48, 64)" filter="url(#popShadow)">
+      <rect width="384" height="68" rx="20" fill="#4F46E5" />
+      <text x="24" y="40" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">
+        Long-press lifts target with 3D spring curve ✨
+      </text>
+      <!-- 3D elevation badge -->
+      <rect x="290" y="14" width="76" height="20" rx="10" fill="#312E81" />
+      <text x="328" y="28" fill="#A5B4FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle">ELEVATED</text>
+    </g>
+
+    <!-- Cupertino Context Menu Floating Card -->
+    <g transform="translate(180, 150)" filter="url(#glassFilter)">
+      <rect width="252" height="194" rx="14" fill="url(#cupertinoGrad)" stroke="#474F7A" stroke-width="0.8" />
+      
+      <!-- Action 1: Reply -->
+      <g transform="translate(16, 28)">
+        <text y="0" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">Reply</text>
+        <path d="M200 -8 l-6 5 l6 5 v-3 c6 0 10 2 12 6 c-1 -4 -4 -8 -12 -8 z" fill="#818CF8" />
+      </g>
+      <line x1="16" y1="44" x2="236" y2="44" stroke="#474F7A" stroke-width="0.5" />
+
+      <!-- Action 2: Copy Text -->
+      <g transform="translate(16, 68)">
+        <text y="0" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">Copy Text</text>
+        <rect x="194" y="-12" width="12" height="14" rx="2" fill="none" stroke="#818CF8" stroke-width="1.5" />
+        <rect x="198" y="-8" width="12" height="14" rx="2" fill="none" stroke="#818CF8" stroke-width="1.5" />
+      </g>
+      <line x1="16" y1="84" x2="236" y2="84" stroke="#474F7A" stroke-width="0.5" />
+
+      <!-- Action 3: Pin -->
+      <g transform="translate(16, 108)">
+        <text y="0" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">Pin Message</text>
+        <circle cx="202" cy="-5" r="4" fill="#818CF8" />
+      </g>
+      <line x1="16" y1="124" x2="236" y2="124" stroke="#474F7A" stroke-width="0.5" />
+
+      <!-- Action 4: Delete (Destructive) -->
+      <g transform="translate(16, 148)">
+        <text y="0" fill="#F87171" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Delete Message</text>
+        <path d="M198 -10 h12 v2 h-12 z M201 -8 v10 h6 v-10 z" fill="#F87171" />
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- COLUMN 2 (RIGHT): ANDROID MATERIAL 3 + COLLISION BOUNDS                   -->
+  <!-- ========================================================================= -->
+  <g transform="translate(640, 140)">
+    <rect width="480" height="370" rx="20" fill="#131424" stroke="#2E3048" stroke-width="1.5" />
+    <text x="24" y="36" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1">ANDROID &amp; DESKTOP: MATERIAL 3 TONAL + COLLISION SAFE</text>
+
+    <!-- Collision Shield Visualizer -->
+    <g transform="translate(24, 60)">
+      <rect width="432" height="56" rx="10" fill="#0C0E1A" stroke="#2D304E" stroke-width="1" />
+      <circle cx="24" cy="28" r="10" fill="#10B981" fill-opacity="0.2" />
+      <text x="24" y="32" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="middle">✓</text>
+      <text x="44" y="24" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Smart Viewport Collision Engine</text>
+      <text x="44" y="42" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Flips above/below &amp; clamps horizontal margin to avoid clipping</text>
+    </g>
+
+    <!-- Material 3 Menu Card -->
+    <g transform="translate(110, 134)" filter="url(#glassFilter)">
+      <rect width="260" height="210" rx="18" fill="url(#materialGrad)" stroke="#3E425E" stroke-width="1" />
+      
+      <!-- M3 Item 1 -->
+      <g transform="translate(18, 32)">
+        <rect x="0" y="-14" width="224" height="38" rx="10" fill="#6366F1" fill-opacity="0.12" />
+        <circle cx="16" cy="5" r="8" fill="#6366F1" />
+        <text x="36" y="9" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">Edit Details</text>
+      </g>
+
+      <!-- M3 Item 2 -->
+      <g transform="translate(18, 76)">
+        <circle cx="16" cy="5" r="8" fill="#94A3B8" fill-opacity="0.3" />
+        <text x="36" y="9" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">Share via System</text>
+      </g>
+
+      <!-- M3 Item 3 -->
+      <g transform="translate(18, 120)">
+        <circle cx="16" cy="5" r="8" fill="#94A3B8" fill-opacity="0.3" />
+        <text x="36" y="9" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">Add to Favorites</text>
+      </g>
+
+      <!-- M3 Item 4 (Destructive) -->
+      <g transform="translate(18, 164)">
+        <circle cx="16" cy="5" r="8" fill="#EF4444" fill-opacity="0.2" />
+        <text x="36" y="9" fill="#F87171" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Remove Forever</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER PILL ROW: FEATURE HIGHLIGHTS                                       -->
+  <!-- ========================================================================= -->
+  <g transform="translate(180, 544)">
+    <g transform="translate(0, 0)">
+      <circle cx="12" cy="12" r="5" fill="#818CF8" />
+      <text x="28" y="16" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">3D Pop Elevation</text>
+    </g>
+    <g transform="translate(200, 0)">
+      <circle cx="12" cy="12" r="5" fill="#818CF8" />
+      <text x="28" y="16" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Real-Time Backdrop Blur</text>
+    </g>
+    <g transform="translate(440, 0)">
+      <circle cx="12" cy="12" r="5" fill="#818CF8" />
+      <text x="28" y="16" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Screen Collision Avoidance</text>
+    </g>
+    <g transform="translate(700, 0)">
+      <circle cx="12" cy="12" r="5" fill="#818CF8" />
+      <text x="28" y="16" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Haptic Clicks</text>
+    </g>
+  </g>
+</svg>
